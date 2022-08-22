@@ -1,0 +1,66 @@
+@use '../../assets/styles/abstracts/variables' as *;
+@use '../../assets/styles/abstracts/minxins' as mixin;
+
+.container {
+  padding-top: 5px !important;
+  min-width: 100px;
+  min-height: 80px;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  padding: 0 20px;
+  margin: 5px 0;
+
+  .avatar {
+    --border-radius: 50%;
+    --size: 50px;
+  }
+
+  .right {
+    margin-left: 20px;
+    flex: 1;
+    .user {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .left {
+        display: flex;
+        flex-direction: column;
+        line-height: 15px;
+        .name {
+          font-weight: bold;
+          font-size: 14px;
+        }
+        .uid {
+          color: $color-secondary;
+          font-size: 12px;
+        }
+      }
+      .button {
+        height: 26px;
+        width: fit-content;
+        min-width: 75px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .bio {
+      line-height: 13px;
+      font-size: 14px;
+      color: $color-text;
+      margin: 5px 0;
+      font-size: 12px;
+      max-width: calc(100vw - 110px);
+      word-wrap: break-word;
+    }
+  }
+}
+
+.followed {
+  --background-color: #000 !important;
+  --text-color: #fff;
+}

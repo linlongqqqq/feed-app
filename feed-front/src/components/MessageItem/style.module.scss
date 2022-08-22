@@ -1,0 +1,54 @@
+@use '../../assets/styles/abstracts/variables' as *;
+@use '../../assets/styles/abstracts/minxins' as mixin;
+.container {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 20px;
+
+  .avatar {
+    --border-radius: 50%;
+    --size: 50px;
+  }
+  .right {
+    margin-left: 20px;
+    flex: 1;
+    .top {
+      height: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .sender {
+        font-weight: bold;
+        font-size: 14px;
+      }
+      .time {
+        font-size: 12px;
+      }
+    }
+
+    .bottom {
+      height: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .message {
+        font-size: 12px;
+        color: $color-secondary;
+        max-width: calc(100vw - 180px);
+        @include mixin.ellipsis;
+        line-height: 20px;
+      }
+      .badge {
+        width: fit-content;
+        height: 18px;
+        background: $color-red;
+        align-items: center;
+        font-size: 12px;
+        justify-content: center;
+        display: flex;
+      }
+    }
+  }
+}

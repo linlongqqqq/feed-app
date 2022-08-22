@@ -1,0 +1,134 @@
+@use '../../assets/styles/abstracts/variables' as *;
+
+.conatiner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.nav {
+  font-size: 14px;
+  font-weight: bold;
+  height: 56px;
+  padding: 0 20px;
+  border-bottom: 2px solid $color-border;
+  line-height: 25px;
+
+  .back {
+    fill: #000;
+  }
+}
+
+.main {
+  background-color: #f4f4f4;
+  padding: 0 20px;
+  height: calc(100vh - 56px - 48px - 48px);
+  overflow: auto;
+}
+
+.loadAll {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  color: $color-secondary;
+}
+.initScroll {
+  scroll-behavior: auto;
+}
+
+.unread {
+  color: $color-secondary;
+  font-size: 14px;
+  text-align: center;
+  margin: 20px 0;
+}
+.popover {
+  --z-index: 600;
+}
+
+.preview {
+  width: 40vw;
+  height: 20vh;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  .close {
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    width: 23px;
+    height: 23px;
+    padding: 3px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  .image {
+    border-radius: 5px;
+    margin-top: 5px;
+    width: calc(40vw - 10px);
+    height: calc(20vh - 20px);
+  }
+}
+
+.unreadPopup {
+  color: $color-primary;
+  --z-index: 500;
+  margin-right: 20px;
+}
+
+.bar {
+  padding: 5px 20px;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid $color-border;
+
+  .end {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    margin-bottom: 12px;
+  }
+  .photo {
+    fill: $color-primary;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    margin-bottom: 5px;
+  }
+
+  .textBox {
+    flex: 1;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    margin: 5px 20px;
+    min-height: 30px;
+    height: fit-content;
+    min-width: 100px;
+    padding: 2px 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .textarea {
+    margin: 5px;
+    --font-size: 16px;
+    display: flex;
+    min-height: 20px;
+  }
+
+  .button {
+    width: 60px;
+    min-width: 60px;
+    height: 30px;
+    font-size: 12px;
+    margin-bottom: 3px;
+  }
+}

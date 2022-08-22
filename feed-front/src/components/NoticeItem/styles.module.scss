@@ -1,0 +1,45 @@
+.ListItem {
+  display: flex;
+  width: 375px;
+  padding: 10px;
+  border-bottom: 1px solid #ededed;
+}
+.avatar {
+  margin-left: 10px;
+  vertical-align: middle;
+  --border-radius: 50%;
+}
+.ListItem_content {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: space-around;
+  .notice {
+    color: #333333;
+    font-family: 'DengXian';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+.ListItem_content_time {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  color: #666666;
+}
+.name {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: black;
+  margin-right: 3px;
+}
+.badge {
+  position: absolute;
+  right: 25px;
+  top: 16px;
+}

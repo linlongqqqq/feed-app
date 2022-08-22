@@ -1,0 +1,16 @@
+.container {
+  background: #3291ff;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px 13px 1px 14px;
+
+  &:hover,
+  &:active {
+    background-color: #8ecdf8;
+  }
+}

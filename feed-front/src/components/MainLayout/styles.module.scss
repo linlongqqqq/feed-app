@@ -1,0 +1,19 @@
+.mainLayout {
+  :global {
+    .adm-tab-bar-item-icon {
+      path {
+        fill: #a9a9a9;
+      }
+    }
+    .tabar {
+      border-top: 1px solid #ededed;
+      border-top: 1px solid #ededed;
+    }
+
+    .adm-tab-bar-item-active {
+      path {
+        fill: #3291ff;
+      }
+    }
+  }
+}

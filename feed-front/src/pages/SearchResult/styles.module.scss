@@ -1,0 +1,25 @@
+.result {
+  width: 100%;
+  height: 100%;
+  // overflow: auto;
+  .sticky {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    .tabs {
+      --active-title-color: #000;
+      font-weight: bold;
+      background-color: #fff;
+    }
+  }
+  .content {
+    width: 100%;
+    height: 77vh;
+    margin-top: 10px;
+    overflow: auto;
+  }
+}
+// .allcontent {
+//   height: 85%;
+//   overflow: auto;
+// }

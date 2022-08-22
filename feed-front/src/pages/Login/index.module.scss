@@ -1,0 +1,25 @@
+@use '../../assets/styles/pages/loginAndRegister';
+
+.button {
+  width: 200px;
+  height: 48px;
+  margin-top: 110px;
+
+  background: #00bc0c;
+  border-radius: 5px;
+
+  .wrap {
+    display: flex;
+    justify-content: center;
+
+    .text {
+      font-family: 'DengXian';
+      padding-left: 10px;
+      color: #ffffff;
+    }
+  }
+
+  &:hover {
+    background-color: #2ba245;
+  }
+}

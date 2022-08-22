@@ -1,0 +1,60 @@
+@use '../../assets//styles/abstracts/variables' as *;
+.popover {
+  --z-index: 500;
+}
+
+.box {
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  .message {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 35vw;
+    word-break: break-all;
+    white-space: pre-line;
+  }
+  .time {
+    margin-top: 10px;
+  }
+  .image {
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 35vw;
+    height: 35vw;
+  }
+}
+.close {
+  color: white;
+  font-size: 30px;
+  position: fixed;
+  left: 5vw;
+  top: 5vh;
+}
+.receive {
+  background-color: #fff;
+  border-bottom-left-radius: 0;
+  .message {
+    color: $color-text;
+  }
+  .time {
+    color: $color-secondary;
+    text-align: start;
+  }
+}
+
+.reply {
+  background-color: $color-primary;
+  border-bottom-right-radius: 0;
+  margin: 20px 0 20px auto;
+  .message {
+    color: #fff;
+  }
+  .time {
+    color: rgba(255, 255, 255, 0.7);
+    text-align: end;
+  }
+}

@@ -1,0 +1,76 @@
+@use '../../assets/styles/components/avatar';
+@use '../../assets/styles/components/popupPost';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+// 取消、发布
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #ededed;
+
+  .cancel {
+    font-size: 14px;
+  }
+
+  .submit {
+    width: 56px;
+    height: 24px;
+  }
+
+  .disable {
+    background-color: skyblue;
+  }
+}
+
+.main {
+  flex: 1;
+  overflow: auto;
+  padding: 20px;
+}
+
+.info {
+  position: relative;
+
+  // 文本输入框
+  textarea {
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+  }
+
+  .at {
+    position: absolute;
+    top: -20px;
+
+    .text {
+      padding-left: 10px;
+      color: #3291ff;
+    }
+  }
+}
+
+// 底部文件按钮
+.fileupload {
+  position: relative;
+  bottom: 0;
+  padding: 20px;
+  min-height: 63px;
+  border-top: 1px solid #ededed;
+}
+
+// 引用转发
+.trans {
+  border: 1px solid #ededed;
+  padding: 10px;
+  margin-top: 10px;
+  & > div {
+    padding-bottom: 0;
+  }
+}

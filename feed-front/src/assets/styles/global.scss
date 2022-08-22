@@ -1,0 +1,18 @@
+// abstract
+@import './abstracts/variables';
+@import './abstracts/minxins';
+
+// base
+@import './base/reset';
+
+// themes
+@import './themes/theme';
+
+// 文件上传进度条
+.toastMask {
+  div.adm-toast-main {
+    // background-color: transparent;
+    width: 100vw;
+    background-color: white;
+  }
+}

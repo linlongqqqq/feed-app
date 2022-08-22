@@ -1,0 +1,102 @@
+@use '../../assets/styles/abstracts/variables' as *;
+.conatiner {
+  height: 100%;
+  width: 100%;
+}
+
+.nav {
+  font-size: 14px;
+  font-weight: bold;
+  height: 56px;
+  width: 100%;
+  padding: 0 20px;
+  border-bottom: 2px solid $color-border;
+  .back {
+    fill: #000;
+  }
+}
+
+.main {
+  height: calc(100vh - 60px);
+  overflow: auto;
+}
+
+.bannerCamera {
+  position: relative;
+  top: -75px;
+  left: calc(50vw - 10px);
+  fill: #fff;
+}
+.backgroundMask {
+  width: 100vw !important;
+  height: 150px;
+  position: relative;
+  top: -170px;
+  z-index: 10;
+  width: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.background {
+  height: 150px;
+}
+
+.avatarCamera {
+  position: relative;
+  top: -253px;
+  left: 45px;
+  fill: #fff;
+  z-index: 20;
+}
+.avatarMask {
+  height: 70px;
+  width: 70px;
+  position: relative;
+  top: -300px;
+  left: 20px;
+  z-index: 30;
+  background-color: rgba($color: #000000, $alpha: 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.avatar {
+  --size: 70px;
+  --border-radius: 50%;
+  position: relative;
+  top: -210px;
+  left: 20px;
+  z-index: 20;
+}
+
+.info {
+  margin-top: -240px;
+
+  div:first-child {
+    border-top: 2px solid $color-border;
+  }
+
+  .item {
+    border-bottom: 2px solid $color-border;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 10px 20px;
+
+    .title {
+      width: 50px;
+    }
+
+    .input {
+      --color: #3291ff;
+      --font-size: 14px;
+    }
+  }
+  .flex {
+    display: flex;
+    flex-direction: row;
+  }
+}

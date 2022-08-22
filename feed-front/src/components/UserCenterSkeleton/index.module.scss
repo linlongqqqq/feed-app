@@ -1,0 +1,92 @@
+.conatiner {
+  height: fit-content;
+  max-height: calc(100vh - 50px);
+  overflow: auto;
+}
+.topBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .top {
+    position: relative;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    top: -130px;
+    .left {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .background {
+    --height: 150px;
+  }
+}
+
+.bottomBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 200px;
+
+  .border {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    border: 4px solid #fff;
+    position: relative;
+    top: -65px;
+    left: 20px;
+    .avatar {
+      --height: 70px;
+      --width: 70px;
+      --border-radius: 50%;
+      background-color: #fbfbfb;
+      position: relative;
+      top: -2.25px;
+      left: -1.25px;
+    }
+  }
+
+  .button {
+    --width: 75px;
+    --height: 30px;
+    --border-radius: 20px;
+    position: relative;
+    top: -15px;
+    right: 20px;
+  }
+}
+
+.user {
+  margin: 10px 20px;
+  margin-top: -50px;
+
+  .name {
+    --height: 20px;
+    --width: 70px;
+    --border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  .info {
+    --height: 20px;
+    --width: 175px;
+    --border-radius: 5px;
+    margin-bottom: 5px;
+  }
+
+  .bio {
+    --height: 40px;
+    --width: calc(100vw - 40px);
+    --border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  .follow {
+    --height: 20px;
+    --width: 140px;
+    --border-radius: 5px;
+    margin-bottom: 5px;
+  }
+}

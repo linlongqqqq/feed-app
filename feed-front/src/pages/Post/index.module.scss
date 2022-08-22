@@ -1,0 +1,191 @@
+@use '../../assets/styles/components/avatar';
+@use '../../assets/styles/components/imgs';
+
+$nav-height: 56px;
+
+.container {
+  height: 100%;
+  overflow: auto;
+
+  .nav {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: $nav-height;
+    background-color: #fff;
+    border-bottom: 2px solid #ededed;
+
+    .headerTitle {
+      font-weight: 700;
+      font-size: 16px;
+    }
+  }
+
+  .main {
+    width: 100%;
+    padding-top: $nav-height;
+    background-color: #fff;
+  }
+
+  .mainInner {
+    padding: 20px;
+    padding-bottom: 0px;
+
+    .viewWrap > div {
+      padding-bottom: 0px;
+    }
+  }
+
+  .repPostInner {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+
+      .nickname {
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .account {
+        font-size: 12px;
+        color: #a9a9a9;
+
+        &:hover {
+          color: #3291ff;
+        }
+      }
+    }
+  }
+
+  .repParent {
+    margin: 10px 0;
+    color: #666666;
+
+    span {
+      color: #3291ff;
+    }
+  }
+
+  .repPost {
+    border: 1px solid #ededed;
+    border-radius: 3px;
+    margin: 0 20px;
+    margin-top: 10px;
+    padding: 5px;
+    & > div {
+      padding-bottom: 0;
+    }
+  }
+
+  .content {
+    letter-spacing: 2px;
+    line-height: 1.5;
+  }
+
+  .time {
+    margin: 10px 0;
+    padding-left: 20px;
+    font-size: 12px;
+    color: #666666;
+  }
+
+  .rlData {
+    padding: 15px;
+    border-top: 2px solid #f1f1f1;
+    border-bottom: 2px solid #f1f1f1;
+    position: relative;
+  }
+
+  .strong {
+    font-weight: 700;
+    padding: 0 5px;
+  }
+
+  .actions {
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    margin: 0 30px;
+
+    .basic {
+      transition: all 1.5s;
+    }
+
+    .unlike {
+      path {
+        fill: #ffffff;
+        stroke: #999999;
+      }
+    }
+
+    .liked {
+      transform: scale(1.5) rotate(360deg);
+    }
+
+    .normal {
+      transform: initial;
+    }
+  }
+
+  .split {
+    min-height: 2px;
+    background-color: #f1f1f1;
+    width: 100%;
+  }
+}
+
+// 股价屏
+
+.skeletonWrap {
+  padding: 20px;
+  padding-top: 0;
+}
+.skeleton {
+  padding-top: $nav-height;
+
+  .header {
+    display: flex;
+
+    .avatar {
+      width: 50px;
+    }
+
+    .info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 40px;
+      gap: 10px;
+
+      & > div {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.gray {
+  overflow: hidden;
+}
+
+.deleted {
+  color: #3291ff;
+  border: 1px solid #efefef;
+  margin-bottom: 10px;
+  padding: 10px !important;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.p20 {
+  margin: 5px 20px;
+}

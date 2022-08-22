@@ -1,0 +1,71 @@
+.home {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.nav {
+  font-size: 14px;
+  font-weight: bold;
+  height: 56px;
+  padding: 0 20px;
+  border-bottom: 2px solid #ededed;
+  transition: all 1s ease-in-out;
+  background-color: #fff;
+  z-index: 998;
+  position: absolute;
+  width: 100%;
+
+  .avatar {
+    --border-radius: 50%;
+    --size: 30px;
+  }
+}
+.body {
+  width: 100%;
+  padding-top: 56px;
+  // height: calc(100vh - 56px - 50px);
+  flex: 1;
+  overflow: auto;
+}
+
+.hidden {
+  transform: translateY(-56px);
+  width: 100vw;
+  position: absolute;
+}
+
+.topBtn {
+  width: 100px;
+  white-space: nowrap;
+  transform: translateY(-100%);
+  visibility: hidden;
+  position: absolute;
+  left: calc(50vw - 50px);
+  right: 0;
+  z-index: 999;
+
+  svg {
+    transform: rotate(180deg);
+  }
+
+  span > span {
+    font-size: 12px;
+    padding-left: 5px;
+  }
+
+  transition: all 0.75s ease-in-out;
+}
+
+.visible {
+  visibility: visible;
+  transform: translateY(56px);
+}
+
+.topHidden {
+  transform: translateY(0);
+}
+
+.empty {
+  flex: 1;
+}

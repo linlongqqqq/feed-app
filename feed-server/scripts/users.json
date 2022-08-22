@@ -1,0 +1,26 @@
+{
+  "RECORDS": [
+    {
+      "account": "Test1",
+      "avatar": "https://img.qwps.cn/6d4942f3cc55053a89af3ffc163b8dc9?imageMogr/v2/crop/!180x180a0a0",
+      "banner": "",
+      "bio": "",
+      "createdAt": "1659917320960",
+      "nickname": "新建的号1",
+      "openid": "oEb5c5oOEPXo-AnEUhg0xX2oBixx",
+      "sex": "0",
+      "status": "1"
+    },
+    {
+      "account": "Test2",
+      "avatar": "http://oss.aliyuncs.com/aliyun_id_photo_bucket/default_handsome.jpg",
+      "banner": "",
+      "bio": "",
+      "createdAt": "1659917421766",
+      "nickname": "新建的号2",
+      "openid": "oEb5c5oOEPXo-AnEUhg0xX2oBix2",
+      "sex": "0",
+      "status": "1"
+    }
+  ]
+}

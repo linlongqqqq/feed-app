@@ -1,0 +1,33 @@
+@use '../../assets/styles/components/avatar';
+
+.meDetail {
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+
+  .meInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    flex: 1;
+
+    .nickname {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .account {
+      font-size: 12px;
+      font-weight: 200;
+    }
+  }
+
+  svg {
+    margin-right: 0;
+    color: skyblue;
+    width: 30px;
+    height: 30px;
+  }
+}

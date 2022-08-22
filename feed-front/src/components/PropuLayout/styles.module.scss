@@ -1,0 +1,54 @@
+.popup {
+  padding: 21px 25px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.content {
+  margin-top: 10px;
+  margin-left: 3px;
+}
+.avatar {
+  margin-left: -3px;
+  border-radius: 50%;
+}
+.name {
+  font-family: 'Font Awesome 5 Free';
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+}
+.at {
+  margin-top: 6px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #a9a9a9;
+}
+.num {
+  margin-top: 15px;
+  color: rgb(121, 121, 121);
+  .count {
+    color: #000000;
+    font-weight: 600;
+  }
+}
+.linkItem {
+  padding: 15px 0;
+  font-size: 14px;
+  path {
+    fill: black;
+  }
+}
+.link {
+  margin-top: 20px;
+}
+.buttom {
+  vertical-align: bottom;
+}

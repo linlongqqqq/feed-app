@@ -1,0 +1,27 @@
+// 添加帖子的图标
+// .addIcon {
+//   position: absolute;
+//   top: calc(-100% - 30px);
+//   right: 30px;
+// }
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+}
+
+.body {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.bottom {
+  position: relative;
+  bottom: 0;
+  border-top: solid 1px var(--adm-border-color);
+  background-color: #fff;
+}

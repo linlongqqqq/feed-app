@@ -1,0 +1,163 @@
+@use '../../assets/styles/abstracts/variables' as *;
+.conatiner {
+  height: fit-content;
+  max-height: calc(100vh - 50px);
+  overflow: auto;
+}
+.topBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .top {
+    position: relative;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    top: -130px;
+    .left {
+      width: 30px;
+      height: 30px;
+      background: url('../../assets/imgs/round_return.png');
+      background-size: cover;
+    }
+    .right {
+      width: 30px;
+      height: 30px;
+      background: url('../../assets/imgs/round_message.png');
+      background-size: cover;
+    }
+  }
+
+  .background {
+    height: 150px;
+  }
+}
+
+.bottomBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 200px;
+
+  .border {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    border: 4px solid #fff;
+    position: relative;
+    top: -65px;
+    left: 20px;
+    .avatar {
+      --size: 70px;
+      --border-radius: 50%;
+      position: relative;
+      top: -2.25px;
+      left: -1.25px;
+    }
+  }
+
+  .button {
+    min-width: 75px;
+    width: fit-content;
+    height: 30px;
+    position: relative;
+    top: -15px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+  }
+}
+
+.followed {
+  --background-color: #000 !important;
+  --text-color: #fff;
+}
+
+.user {
+  margin: 10px 20px;
+  margin-top: -50px;
+  display: flex;
+  flex-direction: column;
+
+  .name {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .info {
+    color: $color-secondary;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 5px;
+    .calendar {
+      fill: $color-secondary;
+      width: 15px;
+      height: 15px;
+      margin: 0 5px 0 15px;
+    }
+  }
+
+  .bio {
+    line-height: 15px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+  }
+  .follow {
+    font-size: 12px;
+    .number {
+      font-weight: bold;
+      margin-right: 5px;
+    }
+    .suffix {
+      margin-right: 15px;
+    }
+  }
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  .tabs {
+    --active-title-color: #000;
+    font-weight: bold;
+    background-color: #fff;
+  }
+}
+
+.center {
+  margin-top: 20vh !important;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  text-align: left !important;
+
+  .onLeft {
+    justify-content: left;
+  }
+  .title {
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .description {
+    color: #000;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

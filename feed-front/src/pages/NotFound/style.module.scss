@@ -1,0 +1,38 @@
+@use '../../assets/styles/abstracts/variables' as *;
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+.nav {
+  font-size: 14px;
+  font-weight: bold;
+  height: 56px;
+  padding: 0 20px;
+  border-bottom: 2px solid $color-border;
+
+  .back {
+    fill: #000;
+  }
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15vh;
+  .image {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+  .notice {
+    font-size: 14px;
+    color: $color-text;
+    margin-bottom: 20px;
+  }
+  .button {
+    height: 30px;
+    display: flex;
+    align-items: center;
+  }
+}

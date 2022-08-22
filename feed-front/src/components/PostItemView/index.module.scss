@@ -1,0 +1,101 @@
+@use '../../assets/styles/components/avatar';
+@use '../../assets/styles/components/popupPost';
+
+.me {
+  padding-bottom: 80px;
+  position: relative;
+}
+
+// 转发
+.meWrap {
+  grid-template-areas:
+    'avatar info'
+    'content content';
+  grid-template-columns: 30px 1fr;
+
+  .avatar {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+  }
+
+  transform: scale(0.9);
+
+  .mainContent {
+    transform: translate(0);
+  }
+}
+
+@mixin ellipsis() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 用户信息
+.info {
+  padding-top: 10px;
+  @include ellipsis();
+  span:nth-child(2n) {
+    padding-left: 5px;
+  }
+  .nickname {
+    font-weight: 700;
+    font-size: 16px;
+    max-width: 100px;
+    @include ellipsis();
+    display: inline-block;
+  }
+
+  .account,
+  .createdAt {
+    @include ellipsis();
+    font-size: 12px;
+    color: #a9a9a9;
+  }
+}
+
+// 内容区域
+.mainContent {
+  .content {
+    letter-spacing: 2px;
+    line-height: 1.5;
+    white-space: pre-line;
+  }
+  transform: translateY(-20px);
+}
+
+// 连接线
+.link::after {
+  width: 1px;
+  height: calc(100% - 52px);
+  content: '';
+  transform: translateX(25px);
+  background-color: #ededed;
+  position: absolute;
+}
+
+.actions {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px 0;
+
+  svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .action-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .unlike path {
+    fill: #ffffff;
+    stroke: #999999;
+  }
+}
